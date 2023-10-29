@@ -1,0 +1,213 @@
+:root {
+  --primary: blue;
+  --shadow: -5px 5px 10px 5px gray;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  background: orange;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  float: right;
+}
+/* ========== global */
+.global {
+  background: rgb(221, 221, 101);
+  display: flex;
+  justify-content: space-between;
+}
+.global > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* =================== Header Menu */
+header {
+  background: var(--primary);
+  color: white;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background: white;
+  color: var(--primary);
+  font-weight: bolder;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo div {
+  border: 3px dotted var(--primary);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  align-self: center;
+}
+
+header ul li {
+  margin-left: 16px;
+}
+
+header ul li:hover {
+  background: red;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+/*============= hero */
+
+.hero {
+  height: 60vh;
+  background: red url(./landscape.avif) center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.635);
+  color: white;
+  width: 400px;
+  padding: 32px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+.hero-content hr {
+  width: 100%;
+}
+/*===========latest Post */
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.articles {
+  width: 66%;
+}
+
+.side-links {
+  width: 34%;
+}
+
+.country {
+  background: yellow;
+  padding: 16px;
+  margin-bottom: 32px;
+  border-radius: 10px;
+}
+
+.date {
+  background: yellowgreen;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  padding: 20px 16px;
+  margin-top: 15px;
+}
+
+.art-img {
+  width: 500px;
+}
+
+.title {
+  color: var(--primary);
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+/*=========== Footer */
+.footer {
+  background: black;
+  color: white;
+  padding: 32px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+/*======== Recommendation */
+
+.recc {
+  background: orangered;
+  margin-top: 32px;
+  padding: 32px 0;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  width: 350px;
+  box-shadow: var(--shadow);
+  background: white;
+  padding-bottom: 32px;
+  border-radius: 10px;
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-btn {
+  background: orange;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.btn:hover,
+.card-btn:hover {
+  cursor: pointer;
+}
+
+.subs input {
+  line-height: 42px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
